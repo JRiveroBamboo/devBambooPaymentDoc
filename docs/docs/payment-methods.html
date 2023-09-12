@@ -37,8 +37,8 @@
 
 
 
-<link rel="preload" href="../scss/main.min.bf9409f933f2bd0b295243f8ded44a57da04188ad2ebec4dfc61961bd25dc7de.css" as="style">
-<link href="../scss/main.min.bf9409f933f2bd0b295243f8ded44a57da04188ad2ebec4dfc61961bd25dc7de.css" rel="stylesheet" integrity="">
+<link rel="preload" href="../scss/main.min.906fa7734f9762ef9a33d484f1cde8dbe03b7f09f1d0520327c6662d445282a6.css" as="style">
+<link href="../scss/main.min.906fa7734f9762ef9a33d484f1cde8dbe03b7f09f1d0520327c6662d445282a6.css" rel="stylesheet" integrity="">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
 
 
@@ -126,7 +126,7 @@
   aria-label="Search …"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../offline-search-index.8f932dde249e22f88026476a3a9c588b9a98b022853f00223b0c2a96459422934ef94f3062324b5c386ed887267234fb97b0249ce94608e91baa94239770386d.json"
+  data-offline-search-index-json-src="../offline-search-index.be996f14fbaee58806af26b1ef9e9bd1083e859d1c68b1ff636cf3292dfa756df4a8607ccb340f8b4a70edbf2214ada7caa6d6dc5cfb5dc16a9617d601b147d6.json"
   data-offline-search-base-href="../"
 >
 
@@ -388,6 +388,31 @@
       
       
         <a id="/docs/forms/embedded-checkout-form.html" style=""  class="td-sidebar-link td-sidebar-link__page  " id="m-docsformsembedded-checkout-formhtml" href="../docs/forms/embedded-checkout-form.html">Embedded Checkout Form</a>
+      
+      
+    </li>
+  </ul>
+   </ul> 
+
+      
+      
+      
+      
+
+
+
+
+
+
+
+
+ <ul class="td-sidebar-nav__section pr-md-3"> 
+<li class="  td-sidebar-nav__section-title ">
+    <a id="/docs/merchant-balances.html" href="../docs/merchant-balances.html" class="align-left pl-0 pr-2 collapsed  td-sidebar-link td-sidebar-link__section ">API for Account Balances</a>
+  </li>
+  <ul class="side-main">
+    <li class="" id="docsmerchant-balanceshtml">
+      
       
       
     </li>
@@ -721,12 +746,6 @@
       
       
       
-        <a id="/docs/payment-methods/peru/pe-cards.html" style=""  class="td-sidebar-link td-sidebar-link__page  sub-section-child-topic" id="m-docspayment-methodsperupe-cardshtml" href="../docs/payment-methods/peru/pe-cards.html">Credit and Debit cards</a>
-      
-      
-      
-      
-      
         <a id="/docs/payment-methods/peru/pe-apm.html" style=""  class="td-sidebar-link td-sidebar-link__page  sub-section-child-topic" id="m-docspayment-methodsperupe-apmhtml" href="../docs/payment-methods/peru/pe-apm.html">Alternative Payment Methods</a>
       
       
@@ -819,6 +838,13 @@
 <p> </p>
 
 
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#payment-method-types">Payment method types</a></li>
+    <li><a href="#countries-table-iso-3166-1">Countries Table (ISO-3166-1)</a></li>
+  </ul>
+</nav>
+
 
 
           </div>
@@ -855,7 +881,109 @@
 	<h1>Countries and payment methods</h1>
         <div class="lead">This section shows all the information related to the payment methods for the different countries.</div>
 	
-	
+	<h2 id="payment-method-types">Payment method types</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">PaymentMediaTypeId</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td>CreditCard</td>
+<td>Credit Card</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td>DebitCard</td>
+<td>Debit Card</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td>PhysicalNetwork</td>
+<td>Cash payment</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td>PrePaid</td>
+<td>Prepaid card</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td>Loyalty</td>
+<td>Loyalty points (Only for 🇺🇾)</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td>BankTransfer</td>
+<td>Bank transfer</td>
+</tr>
+</tbody>
+</table>
+<h2 id="countries-table-iso-3166-1">Countries Table (ISO-3166-1)</h2>
+<div id="shortTable"></div>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Code</th>
+<th>Country</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">AR</td>
+<td>Argentina</td>
+</tr>
+<tr>
+<td style="text-align:center">BR</td>
+<td>Brazil</td>
+</tr>
+<tr>
+<td style="text-align:center">CL</td>
+<td>Chile</td>
+</tr>
+<tr>
+<td style="text-align:center">CR</td>
+<td>Costa Rica</td>
+</tr>
+<tr>
+<td style="text-align:center">CO</td>
+<td>Colombia</td>
+</tr>
+<tr>
+<td style="text-align:center">SV</td>
+<td>El Salvador</td>
+</tr>
+<tr>
+<td style="text-align:center">EC</td>
+<td>Ecuador</td>
+</tr>
+<tr>
+<td style="text-align:center">MX</td>
+<td>Mexico</td>
+</tr>
+<tr>
+<td style="text-align:center">NI</td>
+<td>Nicaragua</td>
+</tr>
+<tr>
+<td style="text-align:center">PE</td>
+<td>Peru</td>
+</tr>
+<tr>
+<td style="text-align:center">PY</td>
+<td>Paraguay</td>
+</tr>
+<tr>
+<td style="text-align:center">UY</td>
+<td>Uruguay</td>
+</tr>
+</tbody>
+</table>
+
 		
 <div class="section-index">
     <hr class="panel-line">
@@ -874,10 +1002,8 @@
                     <h5>
                         <a href="../docs/payment-methods/argentina.html">Argentina</a>
                     </h5>
-                    <p>Tech savvy population with a high GDP per capita, <em><strong>Argentina</strong></em> offers an immense opportunity for global merchants despite regulatory restrictions.</p>
+                    <p>With a tech-savvy population with a high GDP per capita, <em><strong>Argentina</strong></em> offers an immense opportunity for global merchants despite regulatory restrictions.</p>
                 </div>
-            
-        
             
         
             
@@ -925,7 +1051,7 @@
                     <h5>
                         <a href="../docs/payment-methods/brazil.html">Brazil</a>
                     </h5>
-                    <p><em><strong>Brazil</strong></em> is the largest economy of Latin America. Digital technology adoption has ballooned in recent years especially focused on online commerce, payments and banking.</p>
+                    <p><em>Brazil</em> is the largest economy in Latin America. Digital technology adoption has ballooned in recent years, primarily focused on online commerce, payments, and banking.</p>
                 </div>
             
         
@@ -952,7 +1078,7 @@
                     <h5>
                         <a href="../docs/payment-methods/central-america.html">Central America</a>
                     </h5>
-                    <p>Recieve payments in <em><strong>Costa Rica</strong></em>, <em><strong>El Salvador</strong></em>, and <em><strong>Nicaragua</strong></em> using <em>PuntoXpress</em>, the biggest cash collection network with regional coverage in Central America.</p>
+                    <p>Receive payments in <em><strong>Costa Rica</strong></em>, <em><strong>El Salvador</strong></em>, and <em><strong>Nicaragua</strong></em> using <em>PuntoXpress</em>, Central America&rsquo;s most extensive cash collection network with regional coverage.</p>
                 </div>
             
         
@@ -967,7 +1093,7 @@
                     <h5>
                         <a href="../docs/payment-methods/chile.html">Chile</a>
                     </h5>
-                    <p><em><strong>Chile</strong></em> has a highly globalized domestic market with several Free Trade Agreements in place including the <em>United States</em> and <em>China</em>. Purchasing power is one of the highest in the region and the high adoption of local credit and debit cards enables eCommerce merchants to quickly gain traction.</p>
+                    <p><em><strong>Chile</strong></em> has a highly globalized domestic market with several Free Trade Agreements, including the <em>United States</em> and <em>China</em>. Purchasing power is one of the highest in the region, and the increased adoption of local credit and debit cards enables eCommerce merchants to gain traction quickly.</p>
                 </div>
             
         
@@ -1004,6 +1130,8 @@
             
         
             
+        
+            
                 <div class="entry">
                     <h5>
                         <a href="../docs/payment-methods/mexico.html">Mexico</a>
@@ -1017,7 +1145,7 @@
                     <h5>
                         <a href="../docs/payment-methods/paraguay.html">Paraguay</a>
                     </h5>
-                    <p>In <em><strong>Paraguay</strong></em>, electronic payments market is in constant development and growth, driven by the expansion of internet access and the adoption of financial technologies by the population. There are still challenges regarding the financial inclusion and the massive adoption of these payment methods; hence, it&rsquo;s expected that the market still growing in the next years.</p>
+                    <p>In <em><strong>Paraguay</strong></em>, the electronic payments market is in constant development and growth, driven by the population&rsquo;s expansion of internet access and the adoption of financial technologies. There are still challenges regarding financial inclusion and the massive adoption of these payment methods; hence, the market is expected to grow in the following years.</p>
                 </div>
             
         
@@ -1026,7 +1154,7 @@
                     <h5>
                         <a href="../docs/payment-methods/peru.html">Peru</a>
                     </h5>
-                    <p>eCommerce in <em><strong>Peru</strong></em> is constantly growing and has experienced a boom in recent years. According to data from the Cámara de Comercio de Lima, eCommerce in Peru has grown by 95% in the last 5 years, and is expected to continue increasing in the coming years. Furthermore, the eCommerce sector in Peru has been driven by increasing internet penetration and growing consumer confidence in the security of online transactions.</p>
+                    <p>The eCommerce in <em><strong>Peru</strong></em> is constantly growing and has recently experienced a boom. According to data from the Cámara de Comercio de Lima, eCommerce in Peru has grown by 95% in the last five years and is expected to continue increasing in the coming years. Furthermore, the eCommerce sector in Peru has been driven by increasing internet penetration and growing consumer confidence in the security of online transactions.</p>
                 </div>
             
         
@@ -1052,9 +1180,9 @@
 <br>
 <b>Last modified</b>
 
-July 24, 2023: 
+September 12, 2023: 
 
- <i>Publish to dev (0c6f37b)</i>
+ <i>New documentation site (ee25d85)</i>
   </div>
 </div>
 

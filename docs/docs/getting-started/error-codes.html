@@ -26,12 +26,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/getting-started/error-codes.html" /><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2023-03-02T11:40:29-05:00" />
-<meta property="article:modified_time" content="2023-08-22T11:47:46-05:00" /><meta property="og:site_name" content="Bamboo Payment" />
+<meta property="article:modified_time" content="2023-09-05T15:51:18-05:00" /><meta property="og:site_name" content="Bamboo Payment" />
 <meta itemprop="name" content="Error Codes and descriptions">
 <meta itemprop="description" content="This article provides information about the error codes and the possible actions you can take.
 "><meta itemprop="datePublished" content="2023-03-02T11:40:29-05:00" />
-<meta itemprop="dateModified" content="2023-08-22T11:47:46-05:00" />
-<meta itemprop="wordCount" content="1691">
+<meta itemprop="dateModified" content="2023-09-05T15:51:18-05:00" />
+<meta itemprop="wordCount" content="2245">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Error Codes and descriptions"/>
 <meta name="twitter:description" content="This article provides information about the error codes and the possible actions you can take.
@@ -41,8 +41,8 @@
 
 
 
-<link rel="preload" href="../../scss/main.min.bf9409f933f2bd0b295243f8ded44a57da04188ad2ebec4dfc61961bd25dc7de.css" as="style">
-<link href="../../scss/main.min.bf9409f933f2bd0b295243f8ded44a57da04188ad2ebec4dfc61961bd25dc7de.css" rel="stylesheet" integrity="">
+<link rel="preload" href="../../scss/main.min.906fa7734f9762ef9a33d484f1cde8dbe03b7f09f1d0520327c6662d445282a6.css" as="style">
+<link href="../../scss/main.min.906fa7734f9762ef9a33d484f1cde8dbe03b7f09f1d0520327c6662d445282a6.css" rel="stylesheet" integrity="">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
 
 
@@ -130,7 +130,7 @@
   aria-label="Search …"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../offline-search-index.8f932dde249e22f88026476a3a9c588b9a98b022853f00223b0c2a96459422934ef94f3062324b5c386ed887267234fb97b0249ce94608e91baa94239770386d.json"
+  data-offline-search-index-json-src="../../offline-search-index.be996f14fbaee58806af26b1ef9e9bd1083e859d1c68b1ff636cf3292dfa756df4a8607ccb340f8b4a70edbf2214ada7caa6d6dc5cfb5dc16a9617d601b147d6.json"
   data-offline-search-base-href="../../"
 >
 
@@ -392,6 +392,31 @@
       
       
         <a id="/docs/forms/embedded-checkout-form.html" style=""  class="td-sidebar-link td-sidebar-link__page  " id="m-docsformsembedded-checkout-formhtml" href="../../docs/forms/embedded-checkout-form.html">Embedded Checkout Form</a>
+      
+      
+    </li>
+  </ul>
+   </ul> 
+
+      
+      
+      
+      
+
+
+
+
+
+
+
+
+ <ul class="td-sidebar-nav__section pr-md-3"> 
+<li class="  td-sidebar-nav__section-title ">
+    <a id="/docs/merchant-balances.html" href="../../docs/merchant-balances.html" class="align-left pl-0 pr-2 collapsed  td-sidebar-link td-sidebar-link__section ">API for Account Balances</a>
+  </li>
+  <ul class="side-main">
+    <li class="" id="docsmerchant-balanceshtml">
+      
       
       
     </li>
@@ -725,12 +750,6 @@
       
       
       
-        <a id="/docs/payment-methods/peru/pe-cards.html" style=""  class="td-sidebar-link td-sidebar-link__page  sub-section-child-topic" id="m-docspayment-methodsperupe-cardshtml" href="../../docs/payment-methods/peru/pe-cards.html">Credit and Debit cards</a>
-      
-      
-      
-      
-      
         <a id="/docs/payment-methods/peru/pe-apm.html" style=""  class="td-sidebar-link td-sidebar-link__page  sub-section-child-topic" id="m-docspayment-methodsperupe-apmhtml" href="../../docs/payment-methods/peru/pe-apm.html">Alternative Payment Methods</a>
       
       
@@ -826,12 +845,14 @@
 <nav id="TableOfContents">
   <ul>
     <li><a href="#http-codes">HTTP Codes</a></li>
+    <li><a href="#multilanguage-for-errors">Multilanguage for errors</a></li>
     <li><a href="#error-codes">Error Codes</a>
       <ul>
-        <li><a href="#multilanguage-for-errors">Multilanguage for errors</a></li>
         <li><a href="#tokenization-service-errors">Tokenization service errors</a></li>
-        <li><a href="#purchase-service-errors">Purchase service errors</a></li>
         <li><a href="#transactions-service-errors">Transactions service errors</a></li>
+        <li><a href="#purchase-service-errors">Purchase service errors</a></li>
+        <li><a href="#customers-service-errors">Customers service errors</a></li>
+        <li><a href="#loyalty-plan-service-errors">Loyalty Plan service errors</a></li>
       </ul>
     </li>
   </ul>
@@ -943,8 +964,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="error-codes">Error Codes</h2>
-<h3 id="multilanguage-for-errors">Multilanguage for errors</h3>
+<h2 id="multilanguage-for-errors">Multilanguage for errors</h2>
 <p>You can receive the error description by relying on localization features. To do this, you need to send the <code>lang</code> header in your integration, using any of the following languages in <strong>ISO 639-1</strong> format.</p>
 <div id="shortTable"></div>
 <table>
@@ -969,6 +989,15 @@
 </tr>
 </tbody>
 </table>
+<h2 id="error-codes">Error Codes</h2>
+
+
+<div class="alert alert-info" role="alert">
+</i><h4 class="alert-heading"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-info" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-circle-info fa-fw decorative"><path fill="currentColor" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" class=""></path></svg>
+    Info</h4>
+<p class="alert-text">The error code for unknown or undetermined errors is <code>ERR999</code>. In this case, contact <a href="mailto:merchantsupport@bamboopayment.com">Bamboo support</a> for more information.</p>
+</div>
+
 <h3 id="tokenization-service-errors">Tokenization service errors</h3>
 <p>Tokenization errors always starts with <code>TK</code>.</p>
 <div id="cutMessage"></div>
@@ -1004,7 +1033,7 @@
 <td><code>TK004</code></td>
 <td>INVALID_SESSION_IDENTIFIER</td>
 <td>An invalid session ID was sent in a token request.</td>
-<td><a href="#">Regenerate the token</a> and retry the token request.</td>
+<td><a href="../../docs/purchase-workflow/customer-types.html">Regenerate the token</a> and retry the transaction.</td>
 </tr>
 <tr>
 <td><code>TK005</code></td>
@@ -1016,13 +1045,13 @@
 <td><code>TK006</code></td>
 <td>EXPIRED_TOKEN</td>
 <td>The token (One-Time type) has already been used or is expired.</td>
-<td><a href="../../docs/purchase-workflow/customer-types/anonymous-users.html#capture-the-card-data">Regenerate the token (OTT)</a> and retry the token request.</td>
+<td><a href="../../docs/purchase-workflow/customer-types/anonymous-users.html#capture-the-card-data">Regenerate the token (OTT)</a> and retry the transaction.</td>
 </tr>
 <tr>
 <td><code>TK007</code></td>
 <td>INVALID_PAYMENT_MEDIA</td>
 <td>Error with the information of the payment method.</td>
-<td>The <code>PaymentMediaId</code> Check the payment method&rsquo;s value in the respective <a href="../../docs/payment-methods.html">country&rsquo;s list</a>.</td>
+<td>The <code>PaymentMediaId</code> is not correct. Check the payment method&rsquo;s value in the respective <a href="../../docs/payment-methods.html">country&rsquo;s list</a>.</td>
 </tr>
 <tr>
 <td><code>TK008</code></td>
@@ -1034,13 +1063,13 @@
 <td><code>TK009</code></td>
 <td>INVALID_ACTIVATION_CODE</td>
 <td>Token activation code is invalid.</td>
-<td></td>
+<td>Contact <a href="mailto:merchantsupport@bamboopayment.com">Bamboo support</a> to enable the payment method.</td>
 </tr>
 <tr>
 <td><code>TK010</code></td>
 <td>INVALID_COMMERCE_TOKEN</td>
 <td>Commerce Token is invalid.</td>
-<td><a href="#">Regenerate the token (CT)</a> and retry the token request.</td>
+<td><a href="../../docs/purchase-workflow/customer-types/registered-users.html">Regenerate the token (CT)</a> and retry the transaction.</td>
 </tr>
 <tr>
 <td><code>TK011</code></td>
@@ -1052,190 +1081,49 @@
 <td><code>TK012</code></td>
 <td>TOKEN_ACTIVATION_ERROR</td>
 <td>Error while activating token.</td>
-<td></td>
+<td>Contact <a href="mailto:merchantsupport@bamboopayment.com">Bamboo support</a> to enable the payment method.</td>
 </tr>
 <tr>
 <td><code>TK013</code></td>
 <td>TOKEN_REGISTRY_VOID_ERROR</td>
 <td>Error in registration process.</td>
-<td></td>
+<td>Contact <a href="mailto:merchantsupport@bamboopayment.com">Bamboo support</a> to enable the payment method.</td>
 </tr>
 <tr>
 <td><code>TK014</code></td>
 <td>TOKEN_PAYMENT_MEDIA_DISABLED</td>
-<td>Means of payment disabled.</td>
-<td></td>
+<td>Payment method disabled.</td>
+<td>Contact <a href="mailto:merchantsupport@bamboopayment.com">Bamboo support</a> to enable the payment method.</td>
 </tr>
 <tr>
 <td><code>TK015</code></td>
 <td>TOKEN_PAYMENT_MEDIA_UNAVAILABLE</td>
-<td>Means of payment not available for the Commerce</td>
-<td></td>
+<td>The payment method is not available for the Commerce</td>
+<td>Verify that you have enabled the payment method selected.</td>
 </tr>
 <tr>
 <td><code>TK016</code></td>
 <td>PAYMENT_MEDIA_REGISTRY_FAILS</td>
-<td>An error occurred in the process of registering the means of payment.</td>
-<td></td>
+<td>An error occurred in the process of registering the payment method.</td>
+<td>Contact <a href="mailto:merchantsupport@bamboopayment.com">Bamboo support</a> to enable the payment method.</td>
 </tr>
 <tr>
 <td><code>TK017</code></td>
 <td>INVALID_DOCUMENT_NUMBER</td>
 <td>Invalid document.</td>
-<td></td>
+<td>The document provided is not valid according to the country rules.</td>
 </tr>
 <tr>
 <td><code>TK018</code></td>
 <td>INVALID_DOCUMENT_TYPE</td>
 <td>Invalid document type</td>
-<td></td>
+<td>The document type sent is not valid or does not belong to the country.</td>
 </tr>
 <tr>
 <td><code>TK999</code></td>
 <td>UNKNOWN_ERROR</td>
 <td>Unknown error.</td>
 <td>Contact <a href="mailto:merchantsupport@bamboopayment.com">Bamboo support</a> for more information.</td>
-</tr>
-</tbody>
-</table>
-<h3 id="purchase-service-errors">Purchase service errors</h3>
-<p>Purchase errors always starts with <code>PR</code>.</p>
-<div id="cutMessage"></div>
-<table>
-<thead>
-<tr>
-<th>Code</th>
-<th>Message</th>
-<th>Description</th>
-<th>Possible solution</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>PR001</code></td>
-<td>INVALID_TOKEN</td>
-<td>The informed token is invalid, expired or does not correspond to the commerce.</td>
-<td><a href="#">Regenerate the token</a> and retry the token request.</td>
-</tr>
-<tr>
-<td><code>PR002</code></td>
-<td>INVALID_ORDER</td>
-<td>The order number is invalid.</td>
-<td></td>
-</tr>
-<tr>
-<td><code>PR003</code></td>
-<td>INVALID_AMOUNT</td>
-<td>The reported amount is invalid.</td>
-<td></td>
-</tr>
-<tr>
-<td><code>PR004</code></td>
-<td>INVALID_CURRENCY</td>
-<td>The reported currency is invalid.</td>
-<td></td>
-</tr>
-<tr>
-<td><code>PR005</code></td>
-<td>INVALID_INVOICE</td>
-<td>The invoice number is invalid (it must be numeric).</td>
-<td></td>
-</tr>
-<tr>
-<td><code>PR006</code></td>
-<td>INVALID_PURCHASE_IDENTIFIER</td>
-<td>The Purchase identifier is invalid.</td>
-<td></td>
-</tr>
-<tr>
-<td><code>PR007</code></td>
-<td>INVALID_TRANSACTION_IDENTIFIER</td>
-<td>Invalid TransactionID</td>
-<td></td>
-</tr>
-<tr>
-<td><code>PR008</code></td>
-<td>PURCHASE_NOT_FOUND</td>
-<td>The requested purchase cannot be found.</td>
-<td></td>
-</tr>
-<tr>
-<td><code>PR009</code></td>
-<td>INVALID_PURCHASE_STATE</td>
-<td>The current purchase state does not allow the requested operation.</td>
-<td></td>
-</tr>
-<tr>
-<td><code>PR010</code></td>
-<td>TAXABLE_AMOUNT_REQUIRED</td>
-<td>The TaxableAmount field is required.</td>
-<td></td>
-</tr>
-<tr>
-<td><code>PR011</code></td>
-<td>INVOICE_REQUIRED</td>
-<td>The Invoice filed is required.</td>
-<td></td>
-</tr>
-<tr>
-<td><code>PR012</code></td>
-<td>INVALID_CAPTURED_CVV_REQUIRED</td>
-<td>Capture of the card verification code is required.</td>
-<td></td>
-</tr>
-<tr>
-<td><code>PR013</code></td>
-<td>INVALID_INSTALLMENTS</td>
-<td>Selected installments for the purchase are invalid for the card entered.</td>
-<td></td>
-</tr>
-<tr>
-<td><code>PR014</code></td>
-<td>INVALID_DESCRIPTION_LENGTH</td>
-<td>Invalid parameter length description.</td>
-<td></td>
-</tr>
-<tr>
-<td><code>PR015</code></td>
-<td>INVALID_CUSTOMER_USER_AGENT_EMPTY</td>
-<td>UserAgent parameter is empty.</td>
-<td></td>
-</tr>
-<tr>
-<td><code>PR016</code></td>
-<td>INVALID_CUSTOMER_IP_EMPTY</td>
-<td>CustomerIP parameter is empty.</td>
-<td></td>
-</tr>
-<tr>
-<td><code>PR017</code></td>
-<td>TAXABLE_AMOUNT_GREATER_THAN_AMOUNT</td>
-<td>The field TaxableAmount cannot be greater than the purchase total amount.</td>
-<td></td>
-</tr>
-<tr>
-<td><code>PR018</code></td>
-<td>PR_DATE_NEEDED</td>
-<td>To filter by dates, you must enter value for From and To parameters.</td>
-<td></td>
-</tr>
-<tr>
-<td><code>PR019</code></td>
-<td>EXCEED_DATE_RANGE</td>
-<td>The search period cannot exceed the following number of days.</td>
-<td></td>
-</tr>
-<tr>
-<td><code>PR020</code></td>
-<td>INVALID_DOCUMENT_NUMBER</td>
-<td>Invalid registered document</td>
-<td></td>
-</tr>
-<tr>
-<td><code>PR021</code></td>
-<td>NOT_ALLOW_PARTIAL_REFUND</td>
-<td>Partial refunds are not allowed for the payment method used.</td>
-<td></td>
 </tr>
 </tbody>
 </table>
@@ -1464,6 +1352,414 @@
 </tr>
 </tbody>
 </table>
+<h3 id="purchase-service-errors">Purchase service errors</h3>
+<p>Purchase errors always starts with <code>PR</code>.</p>
+<div id="cutMessage"></div>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Message</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>PR001</code></td>
+<td>INVALID_TOKEN</td>
+<td>The informed token is invalid, expired or does not correspond to the commerce.</td>
+</tr>
+<tr>
+<td><code>PR002</code></td>
+<td>INVALID_ORDER</td>
+<td>The order number is invalid.</td>
+</tr>
+<tr>
+<td><code>PR003</code></td>
+<td>INVALID_AMOUNT</td>
+<td>The reported amount is invalid.</td>
+</tr>
+<tr>
+<td><code>PR004</code></td>
+<td>INVALID_CURRENCY</td>
+<td>The reported currency is invalid.</td>
+</tr>
+<tr>
+<td><code>PR005</code></td>
+<td>INVALID_INVOICE</td>
+<td>The invoice number is invalid (it must be numeric).</td>
+</tr>
+<tr>
+<td><code>PR006</code></td>
+<td>INVALID_PURCHASE_IDENTIFIER</td>
+<td>The Purchase identifier is invalid.</td>
+</tr>
+<tr>
+<td><code>PR007</code></td>
+<td>INVALID_TRANSACTION_IDENTIFIER</td>
+<td>Invalid <code>TransactionID</code>.</td>
+</tr>
+<tr>
+<td><code>PR008</code></td>
+<td>PURCHASE_NOT_FOUND</td>
+<td>The requested purchase cannot be found.</td>
+</tr>
+<tr>
+<td><code>PR009</code></td>
+<td>INVALID_PURCHASE_STATE</td>
+<td>The current purchase state does not allow the requested operation.</td>
+</tr>
+<tr>
+<td><code>PR010</code></td>
+<td>TAXABLE_AMOUNT_REQUIRED</td>
+<td>The <code>TaxableAmount</code> field is required.</td>
+</tr>
+<tr>
+<td><code>PR011</code></td>
+<td>INVOICE_REQUIRED</td>
+<td>The <code>Invoice</code> filed is required.</td>
+</tr>
+<tr>
+<td><code>PR012</code></td>
+<td>INVALID_CAPTURED_CVV_REQUIRED</td>
+<td>Capture of the card verification code is required.</td>
+</tr>
+<tr>
+<td><code>PR013</code></td>
+<td>INVALID_INSTALLMENTS</td>
+<td>The selected installments for the purchase are invalid for the card.</td>
+</tr>
+<tr>
+<td><code>PR014</code></td>
+<td>INVALID_DESCRIPTION_LENGTH</td>
+<td>Invalid parameter length description.</td>
+</tr>
+<tr>
+<td><code>PR015</code></td>
+<td>INVALID_CUSTOMER_USER_AGENT_EMPTY</td>
+<td><code>UserAgent</code> parameter is empty.</td>
+</tr>
+<tr>
+<td><code>PR016</code></td>
+<td>INVALID_CUSTOMER_IP_EMPTY</td>
+<td><code>CustomerIP</code> parameter is empty.</td>
+</tr>
+<tr>
+<td><code>PR017</code></td>
+<td>TAXABLE_AMOUNT_GREATER_THAN_AMOUNT</td>
+<td>The field <code>TaxableAmount</code> cannot be greater than the purchase total amount.</td>
+</tr>
+<tr>
+<td><code>PR018</code></td>
+<td>PR_DATE_NEEDED</td>
+<td>To filter by dates, you must enter value for <code>From</code> and <code>To</code> parameters.</td>
+</tr>
+<tr>
+<td><code>PR019</code></td>
+<td>EXCEED_DATE_RANGE</td>
+<td>The search period exceeds the maximum number of days.</td>
+</tr>
+<tr>
+<td><code>PR020</code></td>
+<td>INVALID_DOCUMENT_NUMBER</td>
+<td>Invalid registered document</td>
+</tr>
+<tr>
+<td><code>PR021</code></td>
+<td>NOT_ALLOW_PARTIAL_REFUND</td>
+<td>Partial refunds are not allowed for the payment method used.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="customers-service-errors">Customers service errors</h3>
+<p>Customer always starts with <code>CS</code>.</p>
+<div id="cutMessage"></div>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Message</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>CS001</code></td>
+<td>INVALID_EMAIL</td>
+<td>Invalid e-mail address.</td>
+</tr>
+<tr>
+<td><code>CS002</code></td>
+<td>INVALID_ADDRESS_TYPE</td>
+<td>Invalid address type.</td>
+</tr>
+<tr>
+<td><code>CS003</code></td>
+<td>INVALID_CUSTOMER_IDENTIFIER</td>
+<td>Invalid customer identifier.</td>
+</tr>
+<tr>
+<td><code>CS004</code></td>
+<td>TOKEN_CREATION_FAILED</td>
+<td>An error occurred in the token creation.</td>
+</tr>
+<tr>
+<td><code>CS005</code></td>
+<td>EMAIL_ALREADY_EXISTS</td>
+<td>E-mail already registered.</td>
+</tr>
+<tr>
+<td><code>CS006</code></td>
+<td>INVALID_ADDITIONAL_DATA</td>
+<td>The parameter <code>AdditionalData</code> was not send correctly, it must be <code>key:value</code> separated by semicolon.</td>
+</tr>
+<tr>
+<td><code>CS007</code></td>
+<td>INVALID_CUSTOMER_DOCUMENT</td>
+<td>Invalid customer document number.</td>
+</tr>
+<tr>
+<td><code>CS008</code></td>
+<td>INVALID_CUSTOMER_DOCUMENT_TYPE</td>
+<td>Invalid customer document type.</td>
+</tr>
+<tr>
+<td><code>CS009</code></td>
+<td>TOKEN_ALREADY_EXISTS</td>
+<td>There was already a <code>CommerceToken</code> for the card.</td>
+</tr>
+<tr>
+<td><code>CS010</code></td>
+<td>INVALID_PAYMENT_PROFILE</td>
+<td>Invalid Payment Profile.</td>
+</tr>
+<tr>
+<td><code>CS011</code></td>
+<td>INVALID_PAYMENT_PROFILE_IDENTIFIER</td>
+<td>Invalid Payment Profile Identifier.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="loyalty-plan-service-errors">Loyalty Plan service errors</h3>
+<p>Loyalty plan errors always starts with <code>LP</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>LP004</code></td>
+<td>The program does not exist.</td>
+</tr>
+<tr>
+<td><code>LP005</code></td>
+<td>The redemption center does not exist.</td>
+</tr>
+<tr>
+<td><code>LP006</code></td>
+<td>The branch does not exist.</td>
+</tr>
+<tr>
+<td><code>LP007</code></td>
+<td>The program is not active.</td>
+</tr>
+<tr>
+<td><code>LP008</code></td>
+<td>The redemption center is not enabled.</td>
+</tr>
+<tr>
+<td><code>LP009</code></td>
+<td>The redemption center does not belong to the program.</td>
+</tr>
+<tr>
+<td><code>LP010</code></td>
+<td>The redemption center is not active for the program.</td>
+</tr>
+<tr>
+<td><code>LP011</code></td>
+<td>The branch does not belong to the redemption center.</td>
+</tr>
+<tr>
+<td><code>LP012</code></td>
+<td>The user does not exist.</td>
+</tr>
+<tr>
+<td><code>LP013</code></td>
+<td>The user does not belong to the program.</td>
+</tr>
+<tr>
+<td><code>LP014</code></td>
+<td>The currency does not exist.</td>
+</tr>
+<tr>
+<td><code>LP015</code></td>
+<td>The quotation does not exist.</td>
+</tr>
+<tr>
+<td><code>LP016</code></td>
+<td>The document type does not exist.</td>
+</tr>
+<tr>
+<td><code>LP017</code></td>
+<td>The customer does not exist.</td>
+</tr>
+<tr>
+<td><code>LP018</code></td>
+<td>The balance does not exist.</td>
+</tr>
+<tr>
+<td><code>LP019</code></td>
+<td>Token not found.</td>
+</tr>
+<tr>
+<td><code>LP020</code></td>
+<td>Card not found.</td>
+</tr>
+<tr>
+<td><code>LP021</code></td>
+<td>Card expired.</td>
+</tr>
+<tr>
+<td><code>LP022</code></td>
+<td>Syntax error in the Program.</td>
+</tr>
+<tr>
+<td><code>LP023</code></td>
+<td>Syntax error in the Redemption Center.</td>
+</tr>
+<tr>
+<td><code>LP024</code></td>
+<td>Syntax error in the Branch.</td>
+</tr>
+<tr>
+<td><code>LP025</code></td>
+<td>Syntax error in the Currency.</td>
+</tr>
+<tr>
+<td><code>LP026</code></td>
+<td>Syntax error in the Import.</td>
+</tr>
+<tr>
+<td><code>LP027</code></td>
+<td>Syntax error in the user identification (<code>LoyaltyPlanUserIdentification</code>).</td>
+</tr>
+<tr>
+<td><code>LP028</code></td>
+<td>Syntax error in the masked card.</td>
+</tr>
+<tr>
+<td><code>LP029</code></td>
+<td>Syntax error in the Transaction Id.</td>
+</tr>
+<tr>
+<td><code>LP030</code></td>
+<td>Syntax error in the gateway Transaction Id.</td>
+</tr>
+<tr>
+<td><code>LP031</code></td>
+<td>Syntax error in the number of points.</td>
+</tr>
+<tr>
+<td><code>LP032</code></td>
+<td>Syntax error in the number of installments.</td>
+</tr>
+<tr>
+<td><code>LP033</code></td>
+<td>Syntax error in the token (Authorization).</td>
+</tr>
+<tr>
+<td><code>LP034</code></td>
+<td>The request has an invalid syntax. It is too big or it has an invalid format message.</td>
+</tr>
+<tr>
+<td><code>LP035</code></td>
+<td>Invalid credentials.</td>
+</tr>
+<tr>
+<td><code>LP036</code></td>
+<td>The logged user is not allowed to see the customer data.</td>
+</tr>
+<tr>
+<td><code>LP037</code></td>
+<td>The resource requested cannot be found.</td>
+</tr>
+<tr>
+<td><code>LP038</code></td>
+<td>The loyalty plan is mandatory.</td>
+</tr>
+<tr>
+<td><code>LP039</code></td>
+<td>The Customer Id of the loyalty plan is mandatory.</td>
+</tr>
+<tr>
+<td><code>LP040</code></td>
+<td>Input data error.</td>
+</tr>
+<tr>
+<td><code>LP041</code></td>
+<td>The customer is not authorized.</td>
+</tr>
+<tr>
+<td><code>LP042</code></td>
+<td>Insufficient balance.</td>
+</tr>
+<tr>
+<td><code>LP043</code></td>
+<td>The token has expired.</td>
+</tr>
+<tr>
+<td><code>LP044</code></td>
+<td>The movement is canceled.</td>
+</tr>
+<tr>
+<td><code>LP045</code></td>
+<td>The movement does not exist.</td>
+</tr>
+<tr>
+<td><code>LP046</code></td>
+<td>The number of points sent does not match the points in the movement.</td>
+</tr>
+<tr>
+<td><code>LP047</code></td>
+<td>The movement has already been refunded.</td>
+</tr>
+<tr>
+<td><code>LP048</code></td>
+<td>The movement is a refund.</td>
+</tr>
+<tr>
+<td><code>LP049</code></td>
+<td>The gateway does not exist.</td>
+</tr>
+<tr>
+<td><code>LP050</code></td>
+<td><code>CustomerId</code> with the wrong format.</td>
+</tr>
+<tr>
+<td><code>LP051</code></td>
+<td>The point does not exist.</td>
+</tr>
+<tr>
+<td><code>LP052</code></td>
+<td>The amount sent does not match the amount in the movement.</td>
+</tr>
+<tr>
+<td><code>LP053</code></td>
+<td>The currency sent does not match the currency in the movement.</td>
+</tr>
+<tr>
+<td><code>LP054</code></td>
+<td>The customer does not exist or is not active.</td>
+</tr>
+<tr>
+<td><code>LP055</code></td>
+<td>Customer blocked.</td>
+</tr>
+</tbody>
+</table>
 
 	
 	
@@ -1472,9 +1768,9 @@
 <br>
 <b>Last modified</b>
 
-August 22, 2023: 
+September 5, 2023: 
 
- <i>Migration of the new documentation (1933efc)</i>
+ <i>Minor fixes in the error messages (18b4b7e)</i>
   </div>
 </div>
 

@@ -37,8 +37,8 @@
 
 
 
-<link rel="preload" href="../../scss/main.min.bf9409f933f2bd0b295243f8ded44a57da04188ad2ebec4dfc61961bd25dc7de.css" as="style">
-<link href="../../scss/main.min.bf9409f933f2bd0b295243f8ded44a57da04188ad2ebec4dfc61961bd25dc7de.css" rel="stylesheet" integrity="">
+<link rel="preload" href="../../scss/main.min.906fa7734f9762ef9a33d484f1cde8dbe03b7f09f1d0520327c6662d445282a6.css" as="style">
+<link href="../../scss/main.min.906fa7734f9762ef9a33d484f1cde8dbe03b7f09f1d0520327c6662d445282a6.css" rel="stylesheet" integrity="">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
 
 
@@ -126,7 +126,7 @@
   aria-label="Search …"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../offline-search-index.8f932dde249e22f88026476a3a9c588b9a98b022853f00223b0c2a96459422934ef94f3062324b5c386ed887267234fb97b0249ce94608e91baa94239770386d.json"
+  data-offline-search-index-json-src="../../offline-search-index.be996f14fbaee58806af26b1ef9e9bd1083e859d1c68b1ff636cf3292dfa756df4a8607ccb340f8b4a70edbf2214ada7caa6d6dc5cfb5dc16a9617d601b147d6.json"
   data-offline-search-base-href="../../"
 >
 
@@ -388,6 +388,31 @@
       
       
         <a id="/docs/forms/embedded-checkout-form.html" style=""  class="td-sidebar-link td-sidebar-link__page  " id="m-docsformsembedded-checkout-formhtml" href="../../docs/forms/embedded-checkout-form.html">Embedded Checkout Form</a>
+      
+      
+    </li>
+  </ul>
+   </ul> 
+
+      
+      
+      
+      
+
+
+
+
+
+
+
+
+ <ul class="td-sidebar-nav__section pr-md-3"> 
+<li class="  td-sidebar-nav__section-title ">
+    <a id="/docs/merchant-balances.html" href="../../docs/merchant-balances.html" class="align-left pl-0 pr-2 collapsed  td-sidebar-link td-sidebar-link__section ">API for Account Balances</a>
+  </li>
+  <ul class="side-main">
+    <li class="" id="docsmerchant-balanceshtml">
+      
       
       
     </li>
@@ -721,12 +746,6 @@
       
       
       
-        <a id="/docs/payment-methods/peru/pe-cards.html" style=""  class="td-sidebar-link td-sidebar-link__page  sub-section-child-topic" id="m-docspayment-methodsperupe-cardshtml" href="../../docs/payment-methods/peru/pe-cards.html">Credit and Debit cards</a>
-      
-      
-      
-      
-      
         <a id="/docs/payment-methods/peru/pe-apm.html" style=""  class="td-sidebar-link td-sidebar-link__page  sub-section-child-topic" id="m-docspayment-methodsperupe-apmhtml" href="../../docs/payment-methods/peru/pe-apm.html">Alternative Payment Methods</a>
       
       
@@ -819,6 +838,14 @@
 <p> </p>
 
 
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#payment-methods">Payment methods</a></li>
+    <li><a href="#currencies">Currencies</a></li>
+    <li><a href="#amount-limits">Amount limits</a></li>
+  </ul>
+</nav>
+
 
 
           </div>
@@ -865,7 +892,162 @@
 	<h1>Mexico</h1>
         <div class="lead">With a population of 126 million and 50% of internet penetration, the eCommerce in <em><strong>Mexico</strong></em> has exploded in recent years. This trend is expected to continue in the coming years, with an increase in the adoption of financial technologies and the improvement of electronic payment infrastructure in the country.</div>
 	
-	<p>This section shows the available payment methods, currencies, and related information to be taken into account when processing in <em>Mexico</em>.</p>
+	<p>This section shows the available payment methods, currencies, and related information to consider when processing in <em>Mexico</em>.</p>
+<h2 id="payment-methods">Payment methods</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align:center">Payment MediaId</th>
+<th>Payment Method</th>
+<th style="text-align:center">Purchase</th>
+<th style="text-align:center">Pre-authorization</th>
+<th style="text-align:center">Full refund</th>
+<th style="text-align:center">Partial Refund</th>
+<th>Type</th>
+<th>Flow</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://s3.amazonaws.com/gateway.test.bamboopayment.com/payment-method-logos/OpenPay_PhysicalNetwork.png" style="" /></td>
+<td style="text-align:center">30</td>
+<td>Paynet</td>
+<td style="text-align:center"><img src="../../assets/check_mark_64.png" width="15px"/></td>
+<td style="text-align:center"><img src="../../assets/x_mark_64.png" width="15px"/></td>
+<td style="text-align:center"><img src="../../assets/x_mark_64.png" width="15px"/></td>
+<td style="text-align:center"><img src="../../assets/x_mark_64.png" width="15px"/></td>
+<td>Cash</td>
+<td>API</td>
+</tr>
+<tr>
+<td><img src="https://s3.amazonaws.com/gateway.test.bamboopayment.com/payment-method-logos/BankTransfer.png" style="" /></td>
+<td style="text-align:center">32</td>
+<td>SPEI</td>
+<td style="text-align:center"><img src="../../assets/check_mark_64.png" width="15px"/></td>
+<td style="text-align:center"><img src="../../assets/x_mark_64.png" width="15px"/></td>
+<td style="text-align:center"><img src="../../assets/x_mark_64.png" width="15px"/></td>
+<td style="text-align:center"><img src="../../assets/x_mark_64.png" width="15px"/></td>
+<td>Bank Transfer</td>
+<td>API</td>
+</tr>
+<tr>
+<td><img src="https://s3.amazonaws.com/gateway.test.bamboopayment.com/payment-method-logos/Oxxo_PhysicalNetwork.png" style="" /></td>
+<td style="text-align:center">35</td>
+<td>Oxxo</td>
+<td style="text-align:center"><img src="../../assets/check_mark_64.png" width="15px"/></td>
+<td style="text-align:center"><img src="../../assets/x_mark_64.png" width="15px"/></td>
+<td style="text-align:center"><img src="../../assets/x_mark_64.png" width="15px"/></td>
+<td style="text-align:center"><img src="../../assets/x_mark_64.png" width="15px"/></td>
+<td>Cash</td>
+<td>API</td>
+</tr>
+<tr>
+<td><img src="https://s3.amazonaws.com/gateway.test.bamboopayment.com/payment-method-logos/Visa_CreditCard.png" style="" /></td>
+<td style="text-align:center">111</td>
+<td>Visa</td>
+<td style="text-align:center"><img src="../../assets/check_mark_64.png" width="15px"/></td>
+<td style="text-align:center"><img src="../../assets/x_mark_64.png" width="15px"/></td>
+<td style="text-align:center"><img src="../../assets/x_mark_64.png" width="15px"/></td>
+<td style="text-align:center"><img src="../../assets/x_mark_64.png" width="15px"/></td>
+<td>Credit &amp; Debit Card</td>
+<td>Redirect</td>
+</tr>
+<tr>
+<td><img src="https://s3.amazonaws.com/gateway.test.bamboopayment.com/payment-method-logos/MasterCard_CreditCard.png" style="" /></td>
+<td style="text-align:center">111</td>
+<td>Mastercard</td>
+<td style="text-align:center"><img src="../../assets/check_mark_64.png" width="15px"/></td>
+<td style="text-align:center"><img src="../../assets/x_mark_64.png" width="15px"/></td>
+<td style="text-align:center"><img src="../../assets/x_mark_64.png" width="15px"/></td>
+<td style="text-align:center"><img src="../../assets/x_mark_64.png" width="15px"/></td>
+<td>Credit &amp; Debit Card</td>
+<td>Redirect</td>
+</tr>
+<tr>
+<td><img src="https://s3.amazonaws.com/gateway.test.bamboopayment.com/payment-method-logos/AmericanExpress_CreditCard.png" style="" /></td>
+<td style="text-align:center">111</td>
+<td>American Express</td>
+<td style="text-align:center"><img src="../../assets/check_mark_64.png" width="15px"/></td>
+<td style="text-align:center"><img src="../../assets/x_mark_64.png" width="15px"/></td>
+<td style="text-align:center"><img src="../../assets/x_mark_64.png" width="15px"/></td>
+<td style="text-align:center"><img src="../../assets/x_mark_64.png" width="15px"/></td>
+<td>Credit Card</td>
+<td>Redirect</td>
+</tr>
+<tr>
+<td><img src="https://s3.amazonaws.com/gateway.test.bamboopayment.com/payment-method-logos/Carnet_CreditCard.png" style="" /></td>
+<td style="text-align:center">111</td>
+<td>Carnet</td>
+<td style="text-align:center"><img src="../../assets/check_mark_64.png" width="15px"/></td>
+<td style="text-align:center"><img src="../../assets/x_mark_64.png" width="15px"/></td>
+<td style="text-align:center"><img src="../../assets/x_mark_64.png" width="15px"/></td>
+<td style="text-align:center"><img src="../../assets/x_mark_64.png" width="15px"/></td>
+<td>Credit Card</td>
+<td>Redirect</td>
+</tr>
+</tbody>
+</table>
+<h2 id="currencies">Currencies</h2>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+<th>Mode</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>USD</td>
+<td>US Dollar</td>
+<td>CrossBorder</td>
+</tr>
+<tr>
+<td>MXN</td>
+<td>Mexican Peso</td>
+<td>Domestic and CrossBorder</td>
+</tr>
+</tbody>
+</table>
+<h2 id="amount-limits">Amount limits</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align:center">Cards</th>
+<th style="text-align:center">Cash</th>
+<th style="text-align:center">Bank transfer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Minimum</strong></td>
+<td style="text-align:center">MXN 1</td>
+<td style="text-align:center">MXN 1</td>
+<td style="text-align:center">MXN 0,01</td>
+</tr>
+<tr>
+<td><strong>Maximum</strong></td>
+<td style="text-align:center">MXN 10.000</td>
+<td style="text-align:center">MXN 29.999,99</td>
+<td style="text-align:center">-</td>
+</tr>
+</tbody>
+</table>
+
+
+<div class="alert alert-info" role="alert">
+</i><h4 class="alert-heading"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-info" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-circle-info fa-fw decorative"><path fill="currentColor" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" class=""></path></svg>
+    Note</h4>
+<p class="alert-text"><p>The maximum amount for Cash payment depends on the cash payment office.</p>
+<ul>
+<li>For <em>7Eleven</em>, and <em>Farmacias del Ahorro</em> is MXN 5.000,00.</li>
+<li>For <em>Farmacias Benavides</em>, <em>Walmart Express</em>, <em>Circle K</em>, and <em>OXXO</em> is MXN 10.000,00.</li>
+</ul>
+</p>
+</div>
+
 
 		
 <div class="section-index">
@@ -924,14 +1106,14 @@
             
         
             
-        
-            
                 <div class="entry">
                     <h5>
                         <a href="../../docs/payment-methods/mexico/mx-apm.html">Alternative Payment Methods</a>
                     </h5>
-                    <p>Learn how to integrate your solution to process payments with Cash, OXXO .</p>
+                    <p>Learn how to integrate your solution to process payments in physical payment branches or using Bank transfers.</p>
                 </div>
+            
+        
             
         
             
@@ -1007,9 +1189,9 @@
 <br>
 <b>Last modified</b>
 
-May 16, 2023: 
+September 12, 2023: 
 
- <i>Ajustes documentación (e6966b7)</i>
+ <i>Introductory improvements for this country (fcdbe3c)</i>
   </div>
 </div>
 

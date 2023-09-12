@@ -26,12 +26,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/payouts/payouts-api/variables.html" /><meta property="article:section" content="Payouts" />
 <meta property="article:published_time" content="2023-03-22T15:30:03-05:00" />
-<meta property="article:modified_time" content="2023-08-15T07:37:51-05:00" /><meta property="og:site_name" content="Bamboo Payment" />
+<meta property="article:modified_time" content="2023-09-12T12:18:46-05:00" /><meta property="og:site_name" content="Bamboo Payment" />
 <meta itemprop="name" content="Variables">
 <meta itemprop="description" content="Find the list of variables and codes available for Payouts integration.
 "><meta itemprop="datePublished" content="2023-03-22T15:30:03-05:00" />
-<meta itemprop="dateModified" content="2023-08-15T07:37:51-05:00" />
-<meta itemprop="wordCount" content="405">
+<meta itemprop="dateModified" content="2023-09-12T12:18:46-05:00" />
+<meta itemprop="wordCount" content="314">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Variables"/>
 <meta name="twitter:description" content="Find the list of variables and codes available for Payouts integration.
@@ -41,8 +41,8 @@
 
 
 
-<link rel="preload" href="../../scss/main.min.bf9409f933f2bd0b295243f8ded44a57da04188ad2ebec4dfc61961bd25dc7de.css" as="style">
-<link href="../../scss/main.min.bf9409f933f2bd0b295243f8ded44a57da04188ad2ebec4dfc61961bd25dc7de.css" rel="stylesheet" integrity="">
+<link rel="preload" href="../../scss/main.min.906fa7734f9762ef9a33d484f1cde8dbe03b7f09f1d0520327c6662d445282a6.css" as="style">
+<link href="../../scss/main.min.906fa7734f9762ef9a33d484f1cde8dbe03b7f09f1d0520327c6662d445282a6.css" rel="stylesheet" integrity="">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
 
 
@@ -130,7 +130,7 @@
   aria-label="Search …"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../offline-search-index.8f932dde249e22f88026476a3a9c588b9a98b022853f00223b0c2a96459422934ef94f3062324b5c386ed887267234fb97b0249ce94608e91baa94239770386d.json"
+  data-offline-search-index-json-src="../../offline-search-index.be996f14fbaee58806af26b1ef9e9bd1083e859d1c68b1ff636cf3292dfa756df4a8607ccb340f8b4a70edbf2214ada7caa6d6dc5cfb5dc16a9617d601b147d6.json"
   data-offline-search-base-href="../../"
 >
 
@@ -244,7 +244,7 @@
       
       
       
-        <a id="/payouts/payouts-merchant-console/balances.html" style=""  class="td-sidebar-link td-sidebar-link__page  " id="m-payoutspayouts-merchant-consolebalanceshtml" href="../../payouts/payouts-merchant-console/balances.html">Payouts Balance movements</a>
+        <a id="/payouts/payouts-merchant-console/balances.html" style=""  class="td-sidebar-link td-sidebar-link__page  " id="m-payoutspayouts-merchant-consolebalanceshtml" href="../../payouts/payouts-merchant-console/balances.html">Payout Balance movements</a>
       
       
     </li>
@@ -281,7 +281,19 @@
       
       
       
+        <a id="/payouts/payouts-api/payout-webhook.html" style="  display: block !important; "  class="td-sidebar-link td-sidebar-link__page  " id="m-payoutspayouts-apipayout-webhookhtml" href="../../payouts/payouts-api/payout-webhook.html">Notification Webhook</a>
+      
+      
+      
+      
+      
         <a id="/payouts/payouts-api/variables.html" style="  display: block !important; "  class="td-sidebar-link td-sidebar-link__page  active " id="m-payoutspayouts-apivariableshtml" href="../../payouts/payouts-api/variables.html">Variables</a>
+      
+      
+      
+      
+      
+        <a id="/payouts/payouts-api/payout-error-codes.html" style="  display: block !important; "  class="td-sidebar-link td-sidebar-link__page  " id="m-payoutspayouts-apipayout-error-codeshtml" href="../../payouts/payouts-api/payout-error-codes.html">Error Codes</a>
       
       
     </li>
@@ -326,7 +338,7 @@
 
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#id-types">ID Types</a>
+    <li><a href="#document-types">Document Types</a>
       <ul>
         <li><a href="#argentina">Argentina</a></li>
         <li><a href="#brazil">Brazil</a></li>
@@ -337,7 +349,7 @@
         <li><a href="#uruguay">Uruguay</a></li>
       </ul>
     </li>
-    <li><a href="#error-codes">Error Codes</a></li>
+    <li><a href="#payout-types">Payout types</a></li>
   </ul>
 </nav>
 
@@ -387,8 +399,8 @@
 	<h1>Variables</h1>
     <div class="lead">Find the list of variables and codes available for Payouts integration.</div>
 	       
-	<h2 id="id-types">ID Types</h2>
-<p>The following table shows the document types you must configure in the parameter <code>payee.document.type</code>.</p>
+	<h2 id="document-types">Document Types</h2>
+<p>The following tables show the document types you must configure in the parameter <code>payee.document.type</code> according to the country.</p>
 <h3 id="argentina">Argentina</h3>
 <table>
 <thead>
@@ -414,13 +426,6 @@
 <td>Individuals</td>
 <td style="text-align:center">Numeric</td>
 <td style="text-align:center">11</td>
-</tr>
-<tr>
-<td style="text-align:center">DNI</td>
-<td>National Identity Document</td>
-<td>Individuals</td>
-<td style="text-align:center">Numeric</td>
-<td style="text-align:center">7-9</td>
 </tr>
 </tbody>
 </table>
@@ -669,102 +674,32 @@
 </tr>
 </tbody>
 </table>
-<h2 id="error-codes">Error Codes</h2>
+<h2 id="payout-types">Payout types</h2>
+<p>The following tables show the Payout types you must configure in the parameter <code>type</code>.</p>
+<div id="shortTable"></div>
 <table>
 <thead>
 <tr>
-<th>Error code</th>
+<th style="text-align:center">Type</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>200</code></td>
-<td>Success</td>
+<td style="text-align:center"><code>1</code></td>
+<td>Cash</td>
 </tr>
 <tr>
-<td><code>400</code></td>
-<td>Bad Request</td>
+<td style="text-align:center"><code>2</code></td>
+<td>Bank Transfer</td>
 </tr>
 <tr>
-<td><code>401</code></td>
-<td>Unauthorized</td>
+<td style="text-align:center"><code>3</code></td>
+<td>Wallet</td>
 </tr>
 <tr>
-<td><code>409</code></td>
-<td>Conflict</td>
-</tr>
-<tr>
-<td><code>812</code></td>
-<td>Declined by validation for document</td>
-</tr>
-<tr>
-<td><code>813</code></td>
-<td>Declined by validation for account</td>
-</tr>
-<tr>
-<td><code>814</code></td>
-<td>Declined by validation for country</td>
-</tr>
-<tr>
-<td><code>815</code></td>
-<td>Declined by Compliance</td>
-</tr>
-<tr>
-<td><code>816</code></td>
-<td>Reference ID already used.<br>This error is not be displayed in the <a href="../../payouts/payouts-merchant-console.html">Payouts console</a> but it is returned via API.</td>
-</tr>
-<tr>
-<td><code>901</code></td>
-<td>Bank account is closed</td>
-</tr>
-<tr>
-<td><code>902</code></td>
-<td>Invalid bank account</td>
-</tr>
-<tr>
-<td><code>903</code></td>
-<td>Invalid bank account type</td>
-</tr>
-<tr>
-<td><code>904</code></td>
-<td>Invalid bank branch</td>
-</tr>
-<tr>
-<td><code>905</code></td>
-<td>Monthly limit exceeded for user</td>
-</tr>
-<tr>
-<td><code>906</code></td>
-<td>Rejected by merchant&rsquo;s request</td>
-</tr>
-<tr>
-<td><code>907</code></td>
-<td>The bank account is unable to receive transfers</td>
-</tr>
-<tr>
-<td><code>908</code></td>
-<td>Invalid beneficiary document</td>
-</tr>
-<tr>
-<td><code>909</code></td>
-<td>Beneficiary name doesn&rsquo;t match bank details</td>
-</tr>
-<tr>
-<td><code>910</code></td>
-<td>PIX key invalid</td>
-</tr>
-<tr>
-<td><code>911</code></td>
-<td>Invalid state change requested</td>
-</tr>
-<tr>
-<td><code>912</code></td>
-<td>Insufficient Balance</td>
-</tr>
-<tr>
-<td><code>999</code></td>
-<td>Error</td>
+<td style="text-align:center"><code>4</code></td>
+<td>Instant Bank Transfer (Only for 🇧🇷)</td>
 </tr>
 </tbody>
 </table>
@@ -776,9 +711,9 @@
 <br>
 <b>Last modified</b>
 
-August 15, 2023: 
+September 12, 2023: 
 
- <i>Grammar updates (2da86fc)</i>
+ <i>Grammar improvements (2536c49)</i>
   </div>
 </div>
 

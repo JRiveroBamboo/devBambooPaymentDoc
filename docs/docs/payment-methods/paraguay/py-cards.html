@@ -26,11 +26,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/payment-methods/paraguay/py-cards.html" /><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2023-05-08T07:28:16-05:00" />
-<meta property="article:modified_time" content="2023-05-16T09:59:36-05:00" /><meta property="og:site_name" content="Bamboo Payment" />
+<meta property="article:modified_time" content="2023-09-12T10:41:44-05:00" /><meta property="og:site_name" content="Bamboo Payment" />
 <meta itemprop="name" content="Credit and Debit cards">
 <meta itemprop="description" content="Learn how to integrate your solution to process credit or debit card payments.
 "><meta itemprop="datePublished" content="2023-05-08T07:28:16-05:00" />
-<meta itemprop="dateModified" content="2023-05-16T09:59:36-05:00" />
+<meta itemprop="dateModified" content="2023-09-12T10:41:44-05:00" />
 <meta itemprop="wordCount" content="0">
 <meta itemprop="keywords" content="subtopic," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Credit and Debit cards"/>
@@ -41,8 +41,8 @@
 
 
 
-<link rel="preload" href="../../../scss/main.min.bf9409f933f2bd0b295243f8ded44a57da04188ad2ebec4dfc61961bd25dc7de.css" as="style">
-<link href="../../../scss/main.min.bf9409f933f2bd0b295243f8ded44a57da04188ad2ebec4dfc61961bd25dc7de.css" rel="stylesheet" integrity="">
+<link rel="preload" href="../../../scss/main.min.906fa7734f9762ef9a33d484f1cde8dbe03b7f09f1d0520327c6662d445282a6.css" as="style">
+<link href="../../../scss/main.min.906fa7734f9762ef9a33d484f1cde8dbe03b7f09f1d0520327c6662d445282a6.css" rel="stylesheet" integrity="">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
 
 
@@ -130,7 +130,7 @@
   aria-label="Search …"
   autocomplete="off"
   
-  data-offline-search-index-json-src="../../../offline-search-index.8f932dde249e22f88026476a3a9c588b9a98b022853f00223b0c2a96459422934ef94f3062324b5c386ed887267234fb97b0249ce94608e91baa94239770386d.json"
+  data-offline-search-index-json-src="../../../offline-search-index.be996f14fbaee58806af26b1ef9e9bd1083e859d1c68b1ff636cf3292dfa756df4a8607ccb340f8b4a70edbf2214ada7caa6d6dc5cfb5dc16a9617d601b147d6.json"
   data-offline-search-base-href="../../../"
 >
 
@@ -392,6 +392,31 @@
       
       
         <a id="/docs/forms/embedded-checkout-form.html" style=""  class="td-sidebar-link td-sidebar-link__page  " id="m-docsformsembedded-checkout-formhtml" href="../../../docs/forms/embedded-checkout-form.html">Embedded Checkout Form</a>
+      
+      
+    </li>
+  </ul>
+   </ul> 
+
+      
+      
+      
+      
+
+
+
+
+
+
+
+
+ <ul class="td-sidebar-nav__section pr-md-3"> 
+<li class="  td-sidebar-nav__section-title ">
+    <a id="/docs/merchant-balances.html" href="../../../docs/merchant-balances.html" class="align-left pl-0 pr-2 collapsed  td-sidebar-link td-sidebar-link__section ">API for Account Balances</a>
+  </li>
+  <ul class="side-main">
+    <li class="" id="docsmerchant-balanceshtml">
+      
       
       
     </li>
@@ -725,12 +750,6 @@
       
       
       
-        <a id="/docs/payment-methods/peru/pe-cards.html" style=""  class="td-sidebar-link td-sidebar-link__page  sub-section-child-topic" id="m-docspayment-methodsperupe-cardshtml" href="../../../docs/payment-methods/peru/pe-cards.html">Credit and Debit cards</a>
-      
-      
-      
-      
-      
         <a id="/docs/payment-methods/peru/pe-apm.html" style=""  class="td-sidebar-link td-sidebar-link__page  sub-section-child-topic" id="m-docspayment-methodsperupe-apmhtml" href="../../../docs/payment-methods/peru/pe-apm.html">Alternative Payment Methods</a>
       
       
@@ -879,7 +898,66 @@
 	<h1>Credit and Debit cards</h1>
     <div class="lead">Learn how to integrate your solution to process credit or debit card payments.</div>
 	       
-	
+	<!--
+## Request parameters
+You need to include specific fields for this payment method to work correctly. Check the [Purchase operation](/docs/purchase-workflow/purchases/purchase-operations.html#request-parameters) article for details on authentication, languages of the response, and basic purchase parameters such as amount and currency.
+
+| Property | Type | Mandatory? | Description |
+|---|:-:|:-:|---|
+| `TrxToken` | `string` | Yes | The token that identifies the customer’s card.<br>For more information about how to create the token, refer to [Customers](/docs/purchase-workflow/customer-types.html). |
+| `TargetCountryISO` | `string` | Yes | Indicate the destination country. |
+| `Customer` → `Email` | `string` | Yes | Customer's email. |
+| `Customer` → `FirstName` | `string` | Yes | Customer's first name. |
+| `Customer` → `LastName` | `string` | Yes | Customer's last name. |
+| `Customer` → `DocumentTypeId` | `numeric` | No | Customer's document type.<br>Refer to the [Document types table](/docs/payment-methods/paraguay.html#document-types) to see the possible values. |
+| `Customer` → `DocNumber` | `string` | No | Customer's Document Number. |
+| `Customer` → `PhoneNumber` | `string` | No | Customer's phone number. |
+| `Customer` → `BillingAddress` → `Country` | `string` | No | Customer's Country. |
+| `Customer` → `BillingAddress` → `State` | `string` | No<sup>*</sup> | Customer's State. |
+| `Customer` → `BillingAddress` → `City` | `string` | No | Customer's City. |
+| `Customer` → `BillingAddress` → `AddressDetail` | `string` | No | Customer's Address Detail. |
+| `Customer` → `BillingAddress` → `PostalCode` | `string` | No | Customer's Postal Code. |
+
+
+
+<div class="alert alert-info" role="alert">
+</i><h4 class="alert-heading"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-info" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-circle-info fa-fw decorative"><path fill="currentColor" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" class=""></path></svg>
+    Info</h4>
+<p class="alert-text">Remember that for the Anti-fraud system&rsquo;s correct functioning, we suggest sending additional data described in the section <a href="../../../docs/purchase-workflow/antifraud.html">Anti-fraud</a>.</p>
+</div>
+
+
+### Request example
+```json
+
+```
+
+## Response parameters
+For more information on the response parameters, please refer to the [Response parameters section](/docs/purchase-workflow/purchases/purchase-operations.html#response-parameters) of the Purchase creation.
+
+### Response example
+
+```json
+
+```
+
+## Testing cards
+Use the following cards to simulate the different status of the purchase.
+
+### For approved purchases
+
+| Brand | PAN | CVV | Expiration Date | Details |
+|---|---|---|---|---|
+| Mastercard | `5299910010000015` | `123` | `08/30` | No amount limit. |
+| Visa (credit or Debit) | `4507990000004905` | `123` | `08/30` | No amount limit. |
+| Amex | `373953192351004` | `1234` | `08/30` | Amounts: $1 or $10 |
+
+### For rejected purchases
+
+| PAN | CVV | Expiration Date | Document Type | Document |
+|---|---|---|---|---|
+| `4304968001555104` | `617` | `12/18` | `4` - DNI | `38499826` |
+-->
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
@@ -887,9 +965,9 @@
 <br>
 <b>Last modified</b>
 
-May 16, 2023: 
+September 12, 2023: 
 
- <i>Ajustes documentación (e6966b7)</i>
+ <i>Request examples updated (0c7267b)</i>
   </div>
 </div>
 
