@@ -15032,3 +15032,8 @@ header {
     padding-right: initial !important;
     padding-left: initial !important;
 }
+
+markdown-body ul, .markdown-body ol, .markdown-body dl, .markdown-body table, .markdown-body pre {
+    margin-top: initial !important;
+    margin-bottom: initial !important;
+}
