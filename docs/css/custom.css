@@ -18,3 +18,8 @@ body {
     margin-right: initial !important;
     margin-left: initial !important;
 }
+
+.markdown-body {
+    font-family: poppins,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol !important;
+    font-size: .9rem !important;
+}
