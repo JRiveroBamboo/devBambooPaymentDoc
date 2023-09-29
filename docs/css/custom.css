@@ -15027,3 +15027,8 @@ header {
     font-family: poppins,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol !important;
     font-size: .9rem !important;
 }
+
+.px-3 {
+    padding-right: initial !important;
+    padding-left: initial !important;
+}
