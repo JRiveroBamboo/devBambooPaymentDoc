@@ -15033,7 +15033,7 @@ header {
     padding-left: initial !important;
 }
 
-markdown-body ul, .markdown-body ol, .markdown-body dl, .markdown-body table, .markdown-body pre {
+.markdown-body p,.markdown-body blockquote,.markdown-body ul,.markdown-body ol,.markdown-body dl,.markdown-body table,.markdown-body pre {
     margin-top: initial !important;
     margin-bottom: initial !important;
 }
