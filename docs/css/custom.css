@@ -1,3 +1,18 @@
+body {
+    margin: 0;
+    font-family: poppins,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #222;
+    text-align: left;
+    background-color: #fff;
+}
+
+* {
+    font-family: poppins,sans-serif!important;
+}
+
 .container-lg {
     max-width: initial !important;
     margin-right: initial !important;
