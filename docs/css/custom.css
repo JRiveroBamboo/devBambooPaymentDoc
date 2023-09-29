@@ -13,6 +13,10 @@ body {
     font-family: poppins,sans-serif!important;
 }
 
+header {
+    display: block;
+}
+
 .container-lg {
     max-width: initial !important;
     margin-right: initial !important;
