@@ -15021,19 +15021,17 @@ header {
 }
 
 .container-lg {
-    max-width: initial !important;
-    margin-right: initial !important;
-    margin-left: initial !important;
     font-family: poppins,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol !important;
     font-size: .9rem !important;
 }
 
-.px-3 {
-    padding-right: initial !important;
-    padding-left: initial !important;
-}
-
-.markdown-body p,.markdown-body blockquote,.markdown-body ul,.markdown-body ol,.markdown-body dl,.markdown-body table,.markdown-body pre {
-    margin-top: initial !important;
-    margin-bottom: initial !important;
+.MainContent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
