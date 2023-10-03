@@ -28,12 +28,17 @@ function onPage404Load() {
             document.getElementById("404paragraph").innerText = "Desculpe, a página que você está procurando não existe.";
             document.getElementById("404link").innerText = "Voltar para a página inicial";
         } 
-        homeLink.href = "/devBambooPaymentDoc" + language
+        homeLink.href = "/public" + language
         document.getElementById("404link").href = homeLink.href;
         barLinks[0].href = homeLink.href + "/docs.html";
         barLinks[1].href = homeLink.href + "/payouts.html";
         
     }
+}
+
+function onHomePageLoad() {
+    loadIcons();
+    document.querySelector('h1').style.display = 'none';
 }
 
 function loadIcons() {
@@ -80,7 +85,7 @@ function loadIcons() {
     
     cssLink.rel = 'stylesheet';
     cssLink.type = 'text/css';
-    cssLink.href = '/devBambooPaymentDoc/css/custom.css'; 
+    cssLink.href = '/public/css/custom.css'; 
 
     head.appendChild(cssLink);
         
